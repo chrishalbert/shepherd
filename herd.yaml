@@ -1,0 +1,13 @@
+session_name: shepherd
+windows:
+  - window_name: tmuxp-plugin-shepherd
+    layout: tiled
+    panes: 
+      - shell_command:
+        - cmd: tmux select-pane -t:1.0 -P 'bg=colour223 fg=black'
+        - cmd: tmux select-pane -t:1.0 -T 'shepherd'
+        - cmd: clear
+        - cmd: while IFS= read -r -p "shepherd> " && [[ $REPLY != exit ]]; do continue; done && exit
+        focus: True
+    options_after:
+      synchronize-panes: on
