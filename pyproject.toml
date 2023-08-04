@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "tmuxp-shepherd"
+version = "0.1.0"
+description = "Issue commands to all of your sheep sessions. Great tool for debugging multiple instances, containers, or pods."
+authors = ["Chris Halbert <christopher.halbert@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+tmuxp = "^1.28.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
