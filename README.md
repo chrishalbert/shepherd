@@ -6,9 +6,9 @@ Initialize multiple tmux pane sessions (sheep), all controlled by one shepherd.
 
 ## usage
 1. Start the `shepherd` python shell
-  ```
-  tmuxp load shepherd.yaml
-  ```
+   ```
+   tmuxp load shepherd.yaml
+   ```
 1. Birth a sheep
    ```
    >>> lamb(['echo "Baahh, I\'m Dolly!"'])
@@ -22,4 +22,3 @@ Initialize multiple tmux pane sessions (sheep), all controlled by one shepherd.
    ```
    >>> herd()
    ```   
-   
