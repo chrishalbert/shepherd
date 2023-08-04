@@ -1,0 +1,10 @@
+session_name: shepherd
+windows:
+- window_name: shepherd
+  shell_command_before:
+  - tmux select-pane -t:.0 -P 'bg=colour223 fg=black'
+  - tmux select-pane -t:.0 -T 'shepherd'
+  panes:
+  - shell_command:
+    - export PYTHONSTARTUP=init.py
+    - tmuxp shell --use-pythonrc && exit
