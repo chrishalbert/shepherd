@@ -11,12 +11,12 @@ Initialize multiple tmux pane sessions (sheep), all controlled by one shepherd.
    ```
 1. Birth a sheep
    ```
-   >>> lamb(['echo "Baahh, I\'m Dolly!"'])
+   >>> sheep(['echo "Baahh, I\'m Dolly!"'])
    ```
 1. Heck, birth some more
    ```
    >>> for i in range(4):
-   ...     lamb([f'echo "I am Dolly-{i}"'])
+   ...     sheep([f'echo "I am Dolly-{i}"'])
    ```
 1. Start herding!
    ```
